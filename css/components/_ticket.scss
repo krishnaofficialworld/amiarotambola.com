@@ -1,0 +1,105 @@
+.ticket{
+	text-align: center;
+	.card{
+		border-radius: 0px;
+		background: transparent;
+		margin-bottom: 15px;
+		box-shadow: 0 2px 4px rgba(109 ,55, 204, 10%);
+		border:1px solid rgba(255, 255, 255, 0.5);
+
+		.card-header{
+			background: #000c47;
+
+			div{
+				width: 50%;
+				float: left;
+			}
+
+			.ticket-number{
+				color: $white;
+				font-weight: 700;
+				text-transform: uppercase;
+				text-align: left;
+			}
+
+			.ticket-status{
+				span{
+					padding: 2px 15px;
+					border-radius: 50px;
+					float: right;
+					font-weight: 700;
+					color: $white;
+					background: $darkpink;
+					font-size: 14px;
+				}
+			}
+		}
+
+		.card-body{
+			padding: 0px;
+			.table>:not(caption)>*>*{
+				border-top-width: 0px;
+				border-bottom-width: 0px;
+			}
+			.table{
+				background: #372457;
+				margin-bottom: 0px;
+				text-align: center;
+
+				tr{
+					td{
+						width: 11%;
+						background: $yellow;
+
+						&.active{
+    						background: $green!important;
+    					}
+
+						button{
+							color: $black;
+							font-size: 18px;
+							font-weight: 700;
+							border: 0px;
+							cursor: default;
+    						background: transparent;
+    						padding: 0px!important;
+    						margin: 0px!important;
+						}
+
+						&:nth-child(even) {
+							background-color: $orange;
+						}
+					}
+
+					&:nth-child(2) {
+						background: $yellow;
+
+
+						td:nth-child(odd) {
+							background-color: $orange;
+						}
+
+						td:nth-child(even) {
+							background-color: $yellow;
+						}
+
+					}
+					
+				}
+			}
+		}
+	}
+
+	.clear-btn{
+		background: $purple;
+		color: $white;
+		margin: 0px auto;
+		padding: .375rem 2.5rem;
+		font-weight: 600;
+		font-size: 16px;
+		height: 40px;
+		letter-spacing: 0.5px;
+		border-radius: 50px;
+		margin-bottom: 10px;
+	}
+}

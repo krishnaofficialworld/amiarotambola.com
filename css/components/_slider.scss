@@ -1,0 +1,57 @@
+.slider{
+	background: url(../../images/banner-bg.jpg) no-repeat;
+	background-size: 100%;
+	background-position: center center;
+	padding: 40px;
+	border-radius: 8px;
+	position: relative;
+
+	&:before{
+		// background: linear-gradient(to bottom right, #fca714 0%, #ee5572 100%);
+		background: linear-gradient(to bottom right, #ffbe30 0%, #ff3e00 100%);
+		content: '';
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		border-radius: 8px;
+		opacity: 0.9;
+
+	}		
+
+	.owl-prev, .owl-next {
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  width: 40px!important;
+	  height: 40px!important;
+	  background: rgba(255, 255, 255, 0.5)!important;
+	  border-radius: 40px;
+
+	  span{
+	  	color: $black;
+	  }
+	}
+
+	.owl-prev {
+	  left: 0px;
+	}
+
+	.owl-next {
+	  right: 0px;
+	}
+
+	h1{
+		font-size: 35px;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 700;
+		line-height: 50px;
+
+		span{
+			color: $purple;
+			font-weight: 900;
+		}
+	}
+}

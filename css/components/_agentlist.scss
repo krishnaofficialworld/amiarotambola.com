@@ -1,0 +1,55 @@
+.agentlist{
+	padding: 30px 0px;
+	.table>:not(caption)>*>*{
+		border-top-width: 0px;
+		border-bottom-width: 0px;
+	}
+	.table{
+		background: $white;
+		border: 2px solid rgba(0, 0, 0, 0.5);
+
+		thead{
+			tr{
+				background: $purple;
+				color: $yellow;
+				text-align: center;
+				font-size: 22px;
+			}
+		}
+
+		tbody{
+			tr{
+				&:nth-child(odd) {
+					background-color: $orange;
+				}
+
+				&:nth-child(even) {
+					background-color: $yellow;
+				}
+			}
+
+			td{
+				span{
+					font-weight: 700;
+					font-size: 20px;
+					color: $black;
+					text-transform: capitalize;
+				}
+
+				.call-btn{
+					text-decoration: none;
+					float: right;
+					text-transform: capitalize;
+					background: $purple;
+					color: $white;
+					padding: 4px 12px;
+					font-weight: 600;
+					font-size: 16px;
+					border-radius: 50px;
+					letter-spacing: 0.5px;
+				}
+			}
+
+		}
+	}
+}

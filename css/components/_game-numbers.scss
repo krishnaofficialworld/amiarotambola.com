@@ -1,0 +1,347 @@
+.game-play{
+	ul{
+		padding: 10px;
+	    padding-bottom: 20px;
+	    margin: 0px;
+	    list-style: none;
+	    display: flex;
+	    flex-wrap: wrap;
+
+	    li{
+	    	flex-grow: 0;
+		    flex-basis: 10%;
+		    padding: 5px;
+
+		    span{
+		    	display: block;
+			    height: 65px;
+			    line-height: 60px;
+			    width: 65px;
+			    background: #000c47;
+			    color: $white;
+			    border-radius: 100%;
+			    text-align: center;
+			    margin: 0px auto;
+			    font-size: 22px;
+			    font-weight: 700;
+			    border:3px solid rgba(255, 255, 255, 0.5);
+
+			    &.active{
+			    	background: $darkpink;
+			    }
+		    }
+	    }
+	}
+}
+
+.search-ticket{
+	.search-form{
+		padding: 30px 0px;
+
+		h6{
+			text-align: center;
+			font-weight: 800;
+		}
+
+		.btn-orange{
+			background: $purple;
+			text-transform: uppercase;
+			font-weight: 600;
+			color: $white;
+			border-radius: 0px;
+			height: 40px;
+		}
+
+		.form-control{
+			height: 40px;
+			border-radius: 0px;
+			text-align: center;
+			font-weight: 600;
+			font-size: 17px;
+		}
+
+	}
+
+	.keypad{
+		ul{
+			padding: 10px;
+		    padding-bottom: 20px;
+		    margin: 0px;
+		    list-style: none;
+		    display: flex;
+		    flex-wrap: wrap;
+
+		    li{
+		    	flex-grow: 0;
+			    flex-basis: 10%;
+			    padding: 5px;
+
+			    .btn-key{
+			    	display: block;
+				    height: 65px;
+				    line-height: 50px;
+				    width: 65px;
+				    background: #000c47;
+				    color: #ffffff;
+				    // border-radius: 100%;
+				    text-align: center;
+				    margin: 0px auto;
+				    font-size: 22px;
+				    font-weight: 700;
+				    border: 3px solid rgba(255, 255, 255, 0.5);
+
+				    &:hover{
+				    	background: $darkpink;
+				    }
+			    }
+		    }
+		}
+	}
+}
+
+
+//Game Status
+
+.game-status{
+	padding: 50px 0px;
+
+	.status-type{
+		width: 100%;
+		margin-bottom: 30px;
+
+		.btn.status-title{
+			background: $orange-dark;
+			width: 100%;
+			color: $white;
+			font-size: 24px;
+			font-weight: 700;
+			letter-spacing: 0.5px;
+			cursor: default;
+			box-shadow: 0 2px 4px rgba(109, 55, 204, 15%);
+			border-radius: .25rem .25rem 0 0;
+			text-transform: uppercase;
+
+		}
+
+		.collapse{
+			padding: 20px;
+			background: $orange-dark;
+			border-radius:0 0 .25rem .25rem;
+			overflow: hidden;
+		}
+
+		.card{
+			background: $yellow;
+			border:2px solid rgba(255, 255, 255, 0.5);
+			box-shadow: 0 2px 4px rgba(109, 55, 204, 25%);
+			border-radius: 0px;
+
+			.ticket-number, .ticket-name{
+				font-size: 20px;
+				text-transform: uppercase;
+				color: $black;
+				font-weight: 700;
+			}
+		}
+
+		.view-btn{
+			background: $purple;
+			color: $white;
+			width: 100%;
+			margin-top: 20px;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 17px;
+			height: 40px;
+			border-radius: 30px;
+		}
+	}
+}
+
+.payed-numbers{
+	padding: 30px 0px;
+
+	.title{
+		padding: 0px 30px;
+
+		h3{
+			background: $purple;
+			color: $white;
+			text-align: center;
+			padding: 10px;
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 1px;
+			font-size: 22px;
+		}
+	}
+}
+
+//Responsive
+@media only screen and (max-width: 992px) {
+	.game-play{
+		ul{
+			li{
+			span{
+				height: 50px;
+				width: 50px;
+				line-height: 45px;
+
+			}
+		}
+		}
+	}
+
+
+	.search-ticket{
+		.keypad{
+			ul{
+				li{
+					.btn-key{
+						height: 50px;
+						width: 50px;
+						line-height: 33px;
+					}
+				}
+			}
+		}
+	}
+
+	.payed-numbers{
+		padding: 20px 0px;
+
+		.title{
+			padding: 0px 15px;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.game-play{
+		ul{
+			li{
+				padding: 2px;
+				span{
+					height: 40px;
+					width: 40px;
+					line-height: 40px;
+					font-size: 16px;
+					border: 1px solid rgba(255, 255, 255, 0.5);
+				}
+			}
+		}
+	}
+
+	.search-ticket{
+		.search-form{
+			padding: 20px 0px;
+		}
+
+		.keypad{
+			ul{
+				li{
+					padding: 2px;
+					.btn-key{
+						height: 40px;
+						width: 40px;
+						line-height: 25px;
+						font-size: 16px;
+						border: 1px solid rgba(255, 255, 255, 0.5);
+					}
+				}
+			}
+		}
+	}
+
+	.payed-numbers{
+
+		.title{
+			padding: 0px 0px;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 485px) {
+	.search-ticket{
+
+		.search-form{
+			.btn-orange{
+				font-size: 13px;
+			}
+		}
+
+		.keypad{
+			ul{
+				padding: 10px 0px;
+				li{
+					padding: 2px;
+					.btn-key{
+						height: 35px;
+						width: 35px;
+						line-height: 15px;
+						font-size: 16px;
+						border: 1px solid rgba(255, 255, 255, 0.5);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.game-play{
+		ul{
+			li{
+				span{
+					height: 35px;
+					width: 35px;
+					line-height: 31px;
+					font-size: 14px;
+					padding: 2px 0px;
+				}
+			}
+		}
+	}
+
+	.search-ticket{
+
+		.search-form{
+			padding: 20px 0px 10px;
+			.btn-orange{
+				i{
+					display: none;
+				}
+			}
+		}
+		.keypad{
+			ul{
+				li{
+					.btn-key{
+						height: 28px;
+						width: 28px;
+						line-height: 16px;
+						font-size: 13px;
+						padding: 2px 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 410px) {
+	.game-play{
+		ul{
+			li{
+				span{
+					height: 28px;
+					width: 28px;
+					line-height: 20px;
+					font-size: 15px;
+					padding: 2px 0px;
+				}
+			}
+		}
+	}
+}

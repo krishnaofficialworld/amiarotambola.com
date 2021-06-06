@@ -1,0 +1,140 @@
+//== Typography Variable
+$font-family-base: 'Roboto', sans-serif;
+$heading-font: 'Roboto', sans-serif;
+$font-family: 'Work Sans', sans-serif;
+$font-size-base: 14px;
+
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $heading-font;
+}
+
+// Site Typography Colors
+$body-bg:#f6f7fb;
+$white:#ffffff;
+$black:#000000;
+$dark-gray:#192027;
+$paragraph: #555555;
+$paragraph-light: #777777;
+$gray-color: #999999;
+$light-gray: #f2f2f3;
+$light-white: #f4f5f7;
+$ash-color: #d2d2d2;
+$purple: #1d0a41;
+$orange: #ff8f00;
+$orange-dark: #ff3e00;
+$pink: #ed5375;
+$yellow: #fdce1e;
+$green: #5bbe4c;
+$skyblue: #1ea8cc;
+$darkpink: #d432a4;
+
+//forms
+
+.form-control{
+	font-size: 14px;
+	color: #8b8d8d;
+	&:focus{
+		border-color: #ced4da;
+		box-shadow: inherit;
+	}
+}
+
+//Button
+.btn, button{
+
+	&:focus{
+		box-shadow: inherit;
+		border:0px transparent;
+		outline:inherit;
+	}
+}
+
+.yellow-btn{
+    background: $yellow;
+    color: $white;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover{
+    	color: $white;
+    }
+}
+
+.orange-btn{
+    background: $orange;
+    color: $white;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover{
+    	color: $white;
+    }
+}
+
+.pink-btn{
+	background: $pink;
+    color: $white;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover{
+    	color: $white;
+    	//background:$dark-gray; 
+    }
+
+}
+
+.green-btn{
+	background: $green;
+    color: $white;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover{
+    	color: $white;
+    	//background:$dark-gray; 
+    }
+
+}
+
+//Headdings
+
+.title-header{
+	padding-left: 15px;
+    padding-right: 15px;
+
+    span{
+    	display: inline-block;
+	    position: relative;
+	    top: 10px;
+	    font-size: 20px;
+	    font-weight: 700;
+
+	    i{
+	    	color: $orange;
+	    }
+    }
+
+    .more-link{
+    	display: inline-block;
+	    position: static;
+	    font-size: 13px;
+	    text-decoration: none;
+	    position: absolute;
+	    right: 150px;
+	    margin-top: 3px;
+	    color: $white;
+	    background-color: $orange;
+	    padding: 7px 15px;
+	    border-radius: 30px;
+	    text-transform: capitalize;
+	    font-weight: 500;
+    }
+
+}
